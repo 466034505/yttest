@@ -1,0 +1,77 @@
+
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta content="cn" http-equiv="Content-Language" />
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+      <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" media="screen" />
+      <link rel="stylesheet" href="./css/index.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- 引用看板娘交互所需的样式表 
+      <link href='./static/pio.css' rel='stylesheet' type='text/css' />-->
+	  <!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VRDNYTJ1Y');
+</script>
+      <title>Youtube油管镜像beta</title>
+    </head>
+    
+    <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+      <div id="content">
+        <div class="search_part">
+          <img class="smaller" src="./img/youtube.png" width=33% style="max-width:260px;" ></img>
+		  <br><br>
+          <form id="search_form"  class="search_bar">
+            <button  id="search_submit" onclick="navigateTo()" style="cursor:pointer;" >🔍</button>
+            <span>
+              <input class="search" type="text" value="" autocomplete="off" id="search_input" placeholder="✎ 输入文字或油管链接">
+            </span>
+            <div id="suggest" style="display:none">
+              <ul class="sugList" id="sugList"></ul>
+              <!-- <div class="close" onclick="close_sug()">收起</div> -->
+            </div>
+          </form>
+        </div>
+		<br>
+        <!--以下都是适配的谷歌浏览器，如需替换，请自己动手-->
+        <div class="box" id="">
+          <a id="" target="_blank" href="https://youtube.rincolyan.tk/channel/UC8CU5nVhCQIdAGrFFp4loOQ" ></a>
+          <p id="" class="url">周杰伦</p>
+        </div>
+    
+        <div class="box" id="">
+          <a id="" target="_blank" href="https://youtube.rincolyan.tk/watch?v=_QbRXRnHMVY" ></a>
+          <p id="" class="url">中天电视</p>
+        </div>
+		
+		 <div class="box" id="">
+          <a id="" target="_blank" href="https://youtube.rincolyan.tk/watch?v=xyyvJ_KgTlg" ></a>
+          <p id="" class="url">凤凰卫视</p>
+        </div>
+    
+        <div class="box" id="">
+          <a id="" target="_blank" href="https://youtube.rincolyan.tk/channel/UCD_gy8DWV_DhjJ-bQXF5dGQ" ></a>
+          <p id="" class="url">磊哥聊政经</p>
+        </div> 
+    
+	<script>
+    function navigateTo() {
+        var input_value = document.getElementById("search_input").value;
+		var newurl = "https://youtube.rincolyan.tk/results?search_query=" + input_value;
+		if(input_value == ""){
+        window.open("https://youtube.rincolyan.tk/");
+       }
+       else{ 
+        window.open(newurl); 
+       } 
+    }
+</script>
+    </body>
+    
+    </html>
